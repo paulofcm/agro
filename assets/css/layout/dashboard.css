@@ -1,0 +1,29 @@
+/* base */
+@import url(../base/global.css);
+@import url(../base/reset.css);
+/* dashboard */
+@import url(./dashboard/sidebar.css);
+@import url(./dashboard/header.css);
+
+body {
+  min-height: 100vh;
+  background-color: var(--body-color);
+  transition: all 0.3s ease;
+  font-family: var(--secundary-font);
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+body.dark {
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #3a3b3c;
+  --primary-color-light: #3a3b3c;
+  --border-color: #000000;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+  --active-sidebar: #ccc;
+}

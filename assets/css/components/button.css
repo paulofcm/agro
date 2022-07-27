@@ -1,0 +1,30 @@
+.button {
+  color: var(--text-white);
+  font-size: 2rem;
+  font-weight: 500;
+
+  padding: 1.2rem 9.2rem;
+  border: none;
+  border-radius: 30px;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+.button:hover {
+  background-color: var(--btn-hover);
+}
+
+@media (max-width: 640px) {
+  .button {
+    font-size: 1.8rem;
+    padding: 1rem 8.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    font-size: 1.6rem;
+    padding: 0.8rem 8rem;
+  }
+}
